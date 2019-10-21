@@ -24,26 +24,38 @@
             <ul>
                 <li><b>California Community Colleges (CCC) NOVA web app, nova.ccco.edu</b> -
                     I helped build NOVA, a system for tracking project applications, funding, and expenditure reporting
-                    across California's community college system. Team size ranged from just me, up to 15 people, with
-                    me acting as technical team lead for most of my time on the team. I was heavily involved in feature
+                    across California's community college system. Team size ranged from one (just me) up to 15 people.
+                    I served as engineering lead for most of my time on the team, heavily involved in feature
                     planning and implementation from the engineering side, both front and back end, with heavy emphasis
                     on data schema, creating reusable components and workflows, and browser testing. This project
-                    involved multiple one-time data migrations with frequent schema changes, as the app overtook
+                    involved multiple data migrations with frequent schema changes, as the app overtook
                     multiple other systems and funding sources. The system is based on Angular and Node.js
-                    Express. Product features are demonstrated in
-                    <a href="https://www.youtube.com/watch?v=D75Vl3ce79w">this training video</a>.
+                    Express frameworks. Product features are demonstrated in
+                    <a href="https://www.youtube.com/watch?v=D75Vl3ce79w&start=5"
+                        data-toggle="lightbox" data-width="1000"
+                        data-title="California Community Colleges NOVA System">
+                        this training video
+                    </a>.
                 </li>
                 <li><b>School Information Center for Learning Management System (LMS)</b> -
                     I built custom plugins for New Tech Network's LMS, which provide deep-dive views into a school's
                     courses, students, and grades. This project was a solo effort. The system is based on AngularJS for
                     the front end, and a commercial LMS service as the backend. Product features are demonstrated in
-                    <a href="https://www.youtube.com/watch?v=w7UFpu0NpE4">this training video</a>.
+                    <a href="https://www.youtube.com/watch?v=w7UFpu0NpE4&start=129"
+                        data-toggle="lightbox" data-width="1000"
+                        data-title="New Tech Network LMS School Browser Plugin">
+                        this training video
+                    </a>.
                 </li>
                 <li><b>Student Report Cards for Learning Management System (LMS)</b> -
                     I built a custom report card generator for New Tech Network's LMS with one other team member.
                     This project required extensive integration with a commercial LMS API (Agilix Buzz) to gather data
                     and a custom PHP service to collate data and generate PDFs. Product features are demonstrated in
-                    <a href="https://www.youtube.com/watch?v=Zq_TRClfKRM&t=64s">this video</a>.
+                    <a href="https://www.youtube.com/watch?v=Zq_TRClfKRM&start=92"
+                        data-toggle="lightbox" data-width="1000"
+                        data-title="New Tech Network LMS Report Card Plugin">
+                        this training video
+                    </a>.
                 </li>
                 <li><b>Simple YouTube Shortcode</b> -
                     I released this WordPress.org plug-in that translates shortcode
@@ -63,5 +75,19 @@
         </div>
     </body>
     <footer>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- Load Ekko Lightbox for pretty Youtube lightboxes -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+        <script>
+            $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });        </script>
     </footer>
 </html>
